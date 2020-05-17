@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "yarn form && yarn lint"
+    "pre-commit": "yarn format && yarn lint"
   }
 }

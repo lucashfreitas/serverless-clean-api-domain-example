@@ -39,6 +39,14 @@ functions:
           method: post
           cors: true
           integration: lambda-proxy
+  customers-private-test:
+    handler: src/http/customer/index.handlePrivateRouteTest
+    events:
+      - http:
+          path: customers-private/
+          method: get
+          cors: true
+          integration: lambda-proxy
   get-customers:
     handler: src/http/customer/index.handlerGetCustomers
     events:

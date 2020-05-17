@@ -1,6 +1,7 @@
 import { APIGatewayProxyEvent, Context } from 'aws-lambda';
 import { api } from '../../core/api';
 import { ApiHandler, App } from '../../core/api/api.interface';
+import { authorizer } from '../../core/api/middlewares/authorizer';
 import { toActionResponse } from '../../core/api/response/response';
 
 const getCustomers: ApiHandler = async (
@@ -26,3 +27,6 @@ const createCustomer: ApiHandler = async (
 
 export const handlerGetCustomers = api(getCustomers);
 export const handleAddCustomer = api(createCustomer);
+export const handlePrivateRouteTest = api(createCustomer, {
+  middlewares: [authorizer],
+});

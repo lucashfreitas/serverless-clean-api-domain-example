@@ -2,7 +2,7 @@
 
 The purpose of this repository is to develop a basic/clean serverless API using the same concepts as standards frameworks. (.net, laravel, nestJs, etc)
 
-## Why?:point_up:
+## Motivation:point_up:
 
 Web APIs developed using Laravel, .NET, NodeJs, etc use many concepts, including:
 
@@ -16,6 +16,8 @@ Web APIs developed using Laravel, .NET, NodeJs, etc use many concepts, including
 - Authentication & Authorization
 - Mappers, DTOs.
 
+Should be easy and simple to develop, test and deploy a serverless API that has all these features and more
+
 ## Goal? :runner:
 
 Set up a testable serverless web api on AWS Serverless environment that can be deployed easily and have all the basic concepts above available.
@@ -27,7 +29,7 @@ Show how serverless environments are flexible and simple to use, test and deploy
 - **Serverless Framework**: Deploy and run the API locally.
 - **Docker**: Database Local container.
 - **Webpack**: Generate all bundles for serverless functions.
-- **Prisma**: SQL Database Query builders=
+- **Prisma**: SQL Database client
 - **Inversify**: IOC Container
 - **Github Actions**: CI/CD
 
@@ -43,10 +45,10 @@ Show how serverless environments are flexible and simple to use, test and deploy
 
 ## Folder/structure
 
-`core/api`: All core components for api: container, middlewares, providers.
-`http`: All API Resources & Methods.
-`domain`: Domain Layer
-`db`: DB Service provider
+- `core/api`: All core components for api: container, middlewares, providers.
+- `http`: All API Resources & Methods.
+- `domain`: Domain Layer
+- `db`: DB Service provider
 
 ## Coming Next
 

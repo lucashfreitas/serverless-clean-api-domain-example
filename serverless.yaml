@@ -1,0 +1,65 @@
+service: sample-service
+
+# Use serverless-webpack plugin to transpile ES6/ES7
+plugins:
+  - serverless-offline
+  - serverless-dotenv-plugin
+  - serverless-webpack
+  - serverless-prune-plugin
+
+# Enable auto-packing of external modules
+custom:
+  stage: ${opt:stage,'dev'}
+  prune:
+    automatic: true
+    number: 5
+  serverless-offline:
+    port: 3002
+  webpack:
+    webpackConfig: 'webpack.config.js' # Name of webpack configuration file
+    includeModules: true # Node modules configuration for packaging
+    packager: 'yarn' # Reserved for future use. Any other values will not work right now.
+    packExternalModulesMaxBuffer: 204800 # Size of stdio buffers for spawned child processes
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  cfLogs: true
+  region: ${opt:region, 'us-east-1'}
+
+package:
+  individually: true
+
+functions:
+  create-customer:
+    handler: src/http/customer/index.handleAddCustomer
+    events:
+      - http:
+          path: customers/
+          method: post
+          cors: true
+          integration: lambda-proxy
+  get-customers:
+    handler: src/http/customer/index.handlerGetCustomers
+    events:
+      - http:
+          path: customers/
+          method: get
+          cors: true
+          integration: lambda-proxy
+  create-users:
+    handler: src/http/users/index.handlerCreateUser
+    events:
+      - http:
+          path: users/
+          method: post
+          cors: true
+          integration: lambda-proxy
+  get-users:
+    handler: src/http/users/index.handlerGetUser
+    events:
+      - http:
+          path: users/
+          method: get
+          cors: true
+          integration: lambda-proxy

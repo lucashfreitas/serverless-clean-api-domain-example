@@ -1,0 +1,24 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
+}
+
+datasource db {
+  provider = "mysql"
+  url = "***"
+}
+
+model Customer {
+  description String?
+  email       String
+  id          Int     @default(autoincrement()) @id
+  name        String?
+}
+
+model User {
+  email      String
+  first_name String
+  id         Int     @default(autoincrement()) @id
+  last_name  String?
+  name       String?
+}

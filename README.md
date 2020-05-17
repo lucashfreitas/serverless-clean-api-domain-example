@@ -18,7 +18,7 @@ Web APIs developed using Laravel, .NET, NodeJs, etc use many concepts, including
 
 Should be easy and simple to develop, test and deploy a serverless API that has all these features and more
 
-## Goal? :runner:
+## Goal :clipboard:
 
 Set up a testable serverless web api on AWS Serverless environment that can be deployed easily and have all the basic concepts above available.
 
@@ -33,7 +33,7 @@ Show how serverless environments are flexible and simple to use, test and deploy
 - **Inversify**: IOC Container
 - **Github Actions**: CI/CD
 
-## Running/using it:
+## Running/using it: :hammer:
 
 1. Run `yarn` to install dependencies
 2. Run `docker-compose up -d` to create the database container. (Note: The .env file is committed to this repository but in production apps
@@ -43,14 +43,14 @@ Show how serverless environments are flexible and simple to use, test and deploy
 5. Run `yarn dev` to run it locally.
 6. You can use tools as postman or [insomnia](https://insomnia.rest/) to make easier to test the api. If you prefer to use the second option just import the file `insomnia.json` available on the project root folder.
 
-## Folder/structure
+## Folder/structure :file_folder:
 
 - `core/api`: All core components for api: container, middlewares, providers.
 - `http`: All API Resources & Methods.
 - `domain`: Domain Layer
 - `db`: DB Service provider
 
-## Coming Next
+## Coming Next :pencil:
 
 I'll try to add many more features to this sample:
 

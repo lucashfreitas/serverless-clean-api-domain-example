@@ -42,7 +42,7 @@
     "serverless-prune-plugin": "^1.4.2",
     "serverless-webpack": "^5.3.1",
     "ts-loader": "^7.0.4",
-    "ts-node": "^8.10.1",
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.2",
     "webpack": "^4.44.0",
     "webpack-cli": "^3.3.11",

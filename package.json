@@ -17,7 +17,7 @@
   "author": "Lucas Santos",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.11.5",
     "@babel/node": "^7.8.7",
     "@prisma/cli": "^2.0.0-beta.5",
     "@types/aws-lambda": "^8.10.59",

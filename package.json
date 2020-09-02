@@ -49,7 +49,7 @@
     "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
-    "@prisma/client": "^2.0.0-beta.5",
+    "@prisma/client": "^2.6.0",
     "class-validators": "^1.0.1",
     "date-fns": "^2.15.0",
     "firebase-admin": "^8.10.0",

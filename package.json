@@ -38,7 +38,7 @@
     "prettier": "^2.0.5",
     "serverless": "^2.4.0",
     "serverless-dotenv-plugin": "^3.0.0",
-    "serverless-offline": "^6.7.0",
+    "serverless-offline": "^6.8.0",
     "serverless-prune-plugin": "^1.4.3",
     "serverless-webpack": "^5.3.4",
     "ts-loader": "^8.0.4",

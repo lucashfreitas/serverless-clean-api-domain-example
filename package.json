@@ -52,7 +52,7 @@
     "@prisma/client": "^2.8.0",
     "class-validators": "^1.0.1",
     "date-fns": "^2.15.0",
-    "firebase-admin": "^9.1.1",
+    "firebase-admin": "^9.3.0",
     "graphql": "^15.4.0",
     "inversify": "^5.0.1",
     "reflect-metadata": "^0.1.13"
